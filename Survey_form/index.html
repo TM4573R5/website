@@ -1,0 +1,163 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title></title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>  
+  <body>
+  
+      <!-- HEADER START -->
+
+<div id="page-wrapper">
+  <header id="myheader">
+    <div class="logo">
+        <img
+          id="header-img"
+          src="https://s3.amazonaws.com/freecodecamp/original_trombones.png"
+          alt="jj branch real estate logo"
+        />
+      </div>
+
+    <!-- NAVBAR START -->
+
+      <nav id="nav-bar">
+        <ul>
+          <li><a class="nav-link" href="#features">Features</a></li>
+          <li><a class="nav-link" href="#how-it-works">How It Works</a></li>
+          <li><a class="nav-link" href="#pricing">Pricing</a></li>
+        </ul>
+      </nav>
+  </header>
+
+    <!-- TITLE-HEADER START -->
+  <div class="container">
+  <header class="header">
+      <h1 id="title" class="text-center">JJ BRANCH REAL ESTATE</h1>
+      <p id="description" class="description text-center">Lets us help you find the home of your dreams</p>
+  </header> 
+
+    <!-- SURVEY-FORM START-->
+
+    <form id="survey-form" action="">
+      <div class="input-field">
+        <label id="name-label" for="name">Your Name:</label>
+        <input type="text" name="name" id="name" class="form-control" placeholder="Enter Your Name" required />
+      </div>
+
+      <div class="input-field">
+        <label id="email-label" for="email">Your Email:</label>
+        <input type="email" name="email" id="email" class="form-control" placeholder="Enter Your Email" required />
+      </div>
+
+      <div class="input-field">
+        <label id="number-label" for="number">Your Age:<span class="clue">(optional)</span></label>
+        <input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Enter Your Age" required />
+      </div>
+
+      <div class="form-group">
+          <p> Which option best describes your current status?</p>
+          <select id="dropdown" name="role" class="form-control" required>
+              <option disabled selected value>Select current status</option>
+              <option value="sell">Selling House</option>
+              <option value="buy">Buying New House</option>
+              <option value="search">Looking for New Home</option>
+              <option value="invest">Investing in Real Estate</option>
+              <option value="preferNo">Prefer not to answer</option>
+              <option value="other">Other</option>
+          </select>
+      </div>
+
+      <div class="form-group">
+          <p>Are you using our services at this moment?</p>
+          <label><input name="user-recommend" value="yes-I-am" type="radio" class="input-radio" checked/>Yes I am</label>
+          <label><input name="user-recommend" value="need-to-sign-up" type="radio" class="input-radio" checked/>Need to sign up</label>
+          <label><input name="user-recommend" value="not-right-now" type="radio" class="input-radio" checked/>Not right now</label>
+      </div>
+
+      <div class="form-group">
+          <p>
+              What type of house are you looking for?
+          </p>
+          <select id="most-like" name="mostlike" class="form-control" required>
+              <option disabled selected value>Select an option</option>
+              <option value="townhouse">Townhouse</option>
+              <option value="bungalow">Bungalow</option>
+              <option value="apartment">Apartment</option>
+              <option value="duplex">Duplex</option>
+              <option value="terracedHouse">Terraced House</option>
+              <option value="farmhouse">Farmhouse</option>
+              <option value="prefabHouse">Prefabricated House</option>
+              <option value="other">Other</option>
+          </select>
+      </div>
+
+      <div class="form-group">
+          <p>
+              What is your price range?
+              <span class="clue">(Check all that apply)</span>
+          </p>
+          <label>
+              <input name="prefer" value="$10,000-$50,000" type="checkbox" class="input-checkbox"/>$10,000-$50,000
+          </label>
+          <label>
+            <input name="prefer" value="$60,000-$90,000" type="checkbox" class="input-checkbox"/>$60,000-$90,000
+        </label>
+        <label>
+            <input name="prefer" value="$100,000-$150,000" type="checkbox" class="input-checkbox"/>$100,000-$150,000
+        </label>
+        <label>
+            <input name="prefer" value="$160,000-$190,000" type="checkbox" class="input-checkbox"/>$160,000-$190,000
+        </label>
+        <label>
+            <input name="prefer" value="$200,000-$250,000" type="checkbox" class="input-checkbox"/>$200,000-$250,000
+        </label>
+        <label>
+            <input name="prefer" value="$260,000-$290,000" type="checkbox" class="input-checkbox"/>$260,000-$290,000
+        </label>
+        <label>
+            <input name="prefer" value="$300,000-$350,000" type="checkbox" class="input-checkbox"/>$300,000-$350,000
+        </label>
+        <label>
+            <input name="prefer" value="$360,000-$390,000" type="checkbox" class="input-checkbox"/>$360,000-$390,000
+        </label>
+        <label>
+            <input name="prefer" value="$400,000-$450,000" type="checkbox" class="input-checkbox"/>$400,000-$450,000
+        </label>
+        <label>
+            <input name="prefer" value="$460,000-$490,000" type="checkbox" class="input-checkbox"/>$460,000-$490,000
+        </label>
+        <label>
+            <input name="prefer" value="$500,000-$1,000,000" type="checkbox" class="input-checkbox"/>$500,000-$,1000,000
+        </label>
+        <label>
+            <input name="prefer" value="other" type="checkbox" class="input-checkbox"/>Other
+        </label>
+      </div>
+
+      <div class="form-group">
+          <p>Any comments or other questions?</p>
+          <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter comment here..."></textarea>
+      </div>
+
+      <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">Submit</button>
+      </div>
+    </form>
+   </div>
+  
+   <footer>
+    <ul>
+      <li><a href="#">Features</a></li>
+      <li><a href="#">How It Works</a></li>
+      <li><a href="#">Pricing</a></li>
+      <li><a href="#">Privacy</a></li>
+      <li><a href="#">Terms</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    <span>Copyright 2020, JJ BRANCH REAL ESTATE</span>
+  </footer>
+</div>
+  </body>
+</html>
